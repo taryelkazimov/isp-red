@@ -9,10 +9,10 @@ do {$res = Test-Connection -BufferSize 32 -Count 1 -TargetName 8.8.8.8 -Quiet;
             Start-Sleep 5
 
             $primaryInterface = "/etc/sysconfig/network-scripts/ifcfg-ens192"
-            $backupInterface = "/etc/sysconfig/network-scripts/ifcfg-Wired_connection_1-1"
+            $backupInterface = "/etc/sysconfig/network-scripts/ifcfg-ens37"
 
             $primaryInterfaceName = "ens192"
-            $backupInterfaceName = "Wired_connection_1-1"
+            $backupInterfaceName = "ens37"
 
             $primaryGW = "GATEWAY=10.0.1.241"
             $backupGw = "GATEWAY=10.0.4.242"
